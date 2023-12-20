@@ -1,0 +1,46 @@
+/* FixturesPage.module.css */
+.fixtures-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .fixtures-heading {
+    color: #333;
+  }
+  
+  .fixtures-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .fixture-item {
+    margin-bottom: 8px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+  
+  .loading-message {
+    color: #777;
+    font-style: italic;
+  }
+  /* FixturesPage.css */
+.teamContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .teamName {
+    width: 48%; /* Adjust as needed */
+  }
+  
+  .matchSubtitle {
+    /* Your styles for match subtitle */
+  }
+  
+  .venue {
+    /* Your styles for venue */
+  }
+  

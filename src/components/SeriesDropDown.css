@@ -1,0 +1,48 @@
+/* SeriesDropdown.css */
+.series-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.series-link {
+  cursor: pointer;
+  color: #333;
+  padding: 10px;
+  border: none; /* Remove border */
+  border-radius: 5px;
+  background: none; /* Remove background color */
+}
+
+.series-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.series-list li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.series-list img {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.series-list li:hover {
+  background-color: #eee;
+}

@@ -1,0 +1,27 @@
+/* FloatingAuthButton.css */
+.floating-auth-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%; /* Make the button circular */
+    overflow: hidden; /* Hide overflow content for a perfect circle */
+  }
+  
+  button {
+    padding: 12px 20px;
+    background-color: #f57c00; /* Cricket ball color, adjust as needed */
+    color: white;
+    border: none;
+    border-radius: 50%; /* Make the button circular */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px; /* Adjust the font size as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button:hover {
+    background-color: #e65100; /* Change the color on hover */
+  }
+  

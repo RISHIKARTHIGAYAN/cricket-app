@@ -1,0 +1,39 @@
+/* SeriesPage.css */
+
+/* Container styles for each series item */
+.series-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for the clickable container */
+  .series-container:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Series name style */
+  .series-name {
+    font-weight: bold;
+  }
+  
+  /* Season and status styles */
+  .series-details {
+    color: #666;
+  }
+  
+  /* Styling for the list of fixtures */
+  .fixtures-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Styles for each fixture item */
+  .fixture-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px 0;
+  }
+  

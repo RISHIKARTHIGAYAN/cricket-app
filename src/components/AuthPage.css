@@ -1,0 +1,21 @@
+/* AuthPage.css */
+.auth-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  background-image: url('./hills.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  color: white; /* Text color */
+}
+
+/* Additional styling for the form components  */
+.auth-page-container h2,
+.auth-page-container p,
+.auth-page-container button,
+.auth-page-container input {
+  display: block;
+  margin-bottom: 10px; /* Adjust as needed for spacing between elements */
+}

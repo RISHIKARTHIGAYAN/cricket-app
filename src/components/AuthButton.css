@@ -1,0 +1,19 @@
+/* AuthButton.css */
+.auth-button {
+  margin-top: 10px; /* Adjust the margin as needed */
+  margin-right: 20px; /* Add margin to the right for spacing */
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #800080; /* Purple color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #6a006a; /* Darker purple on hover */
+}
