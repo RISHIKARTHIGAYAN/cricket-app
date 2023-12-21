@@ -1,6 +1,7 @@
 // components/Login.js
 import React, { useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
+import { jwtDecode } from 'jwt-decode';
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -30,7 +31,12 @@ const Login = () => {
       };
       
       if (isAuthenticated) {
-        login(username);
+        const Role = jwtDecode(data.token).role
+        const userData = {
+          username: username,
+          role: Role
+        };
+        login(userData);
       }
        // Handle the token or error response
     } catch (error) {

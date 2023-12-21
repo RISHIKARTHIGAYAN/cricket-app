@@ -16,6 +16,9 @@ import MatchDetails from './components/MatchDetails';
 import SeriesPage from './components/SeriesPage';
 import PlayersPage from './components/PlayersPage';
 import PlayersData from './components/PlayersData';
+import NewsArticleForm from './components/NewsArticleForm';
+import StatsCorner from './components/StatsCorner';
+import AdminPanel from './components/AdminPanel';
 
 const App = () => {
   const [newsArticles, setNewsArticles] = useState([]);
@@ -45,6 +48,9 @@ const App = () => {
           <Route path='/series' element={<SeriesPage/>}/>
           <Route path='/players' element={<PlayersPage/>}/>
           <Route path='/players/:playerId' element={<PlayersData/>}/>
+          <Route path='/article-form' element={<NewsArticleForm/>}/>
+          <Route path='/stats' element={<StatsCorner/>}/>
+          <Route path="/admin-panel" element={<AdminPanel/>} />
           <Route path="/" element={
           <div className="news-list">
             {newsArticles.map((news) => (

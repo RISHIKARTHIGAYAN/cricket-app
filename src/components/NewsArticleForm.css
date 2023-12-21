@@ -1,0 +1,23 @@
+/* ArticleForm.css */
+.article-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .article-form {
+    width: 75%;
+    max-width: 600px; /* Set a maximum width if needed */
+  }
+  
+  .article-form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .article-form textarea {
+    width: 100%;
+    resize: vertical; /* Allow vertical resizing of the textarea */
+  }
+  

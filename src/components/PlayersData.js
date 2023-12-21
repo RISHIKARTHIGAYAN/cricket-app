@@ -15,7 +15,7 @@ const PlayersData = ({ match }) => {
             method: 'GET',
             url: `https://cricbuzz-cricket.p.rapidapi.com/stats/v1/player/${param.playerId}`,
             headers: {
-              'X-RapidAPI-Key': '23373efb18mshc1bd80b9460869ep11f283jsn1a854315d51a',
+              'X-RapidAPI-Key': '883d4be953msh491a4bc12419a9cp168e4ejsn2e895db5746c',
               'X-RapidAPI-Host': 'cricbuzz-cricket.p.rapidapi.com'
             }
           };

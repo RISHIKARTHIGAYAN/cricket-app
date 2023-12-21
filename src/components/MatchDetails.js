@@ -11,7 +11,7 @@ const MatchDetails = () => {
     method: 'GET',
     url: `https://cricket-live-data.p.rapidapi.com/match/${matchId}`,
     headers: {
-      'X-RapidAPI-Key': '23373efb18mshc1bd80b9460869ep11f283jsn1a854315d51a',
+      'X-RapidAPI-Key': '883d4be953msh491a4bc12419a9cp168e4ejsn2e895db5746c',
       'X-RapidAPI-Host': 'cricket-live-data.p.rapidapi.com'
     }
   };

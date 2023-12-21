@@ -1,0 +1,34 @@
+/* StatsCorner.css (or your preferred CSS file) */
+
+.stats-data {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .player-info {
+    background-color: rgba(128, 0, 128, 0.2); /* Purple tinted background */
+    border: 1px solid rgba(128, 0, 128, 0.5); /* Border for better visibility */
+    padding: 10px;
+    margin: 10px;
+    width: calc(33.33% - 20px); /* 33.33% width for each item with margin */
+    box-sizing: border-box; /* Include padding and border in the width */
+    text-align: center;
+  }
+  
+  .stats-title {
+    text-align: center;
+  }
+  
+  .dropdowns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  label, select {
+    margin-right: 10px;
+  }
+  
+  /* Add any additional styling based on your design preferences */
+  

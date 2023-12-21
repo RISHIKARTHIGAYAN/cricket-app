@@ -18,8 +18,12 @@ const Register = () => {
       const data = await response.json();
       console.log(data);
       const isAuthenticated = true;
+      const userData = {
+        username: username,
+        role:"user",
+      }
       if (isAuthenticated) {
-        login(username);
+        login(userData);
       } // Handle the response (success or error)
     } catch (error) {
       console.error('Registration error:', error);

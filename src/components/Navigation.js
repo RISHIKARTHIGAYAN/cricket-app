@@ -10,7 +10,12 @@ import { useAuth } from '../contexts/AuthContext';
 const Navigation = () => {
   const [scrolled, setScrolled] = useState(false);
   const { user, logout } = useAuth();
-
+  const User=JSON.parse(user);
+  let username = null;
+  if (user != null) {
+    const username =user;
+  }
+  
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY;
@@ -40,7 +45,7 @@ const Navigation = () => {
       </ul>
       {user ? (
         <div>
-          <span>Hello, {user}</span>
+          <span >Hello, <Link to={'/auth'}>{User}</Link></span>
           <button onClick={logout}>Logout</button>
         </div>
       ) : (
