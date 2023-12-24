@@ -31,22 +31,29 @@ const NewsArticleForm = () => {
   };
 
   return (
-    <div>
+    <div className="container mt-4">
       <h2>Add News Article</h2>
-      <label htmlFor="title">Title:</label>
-      <input
-        type="text"
-        id="title"
-        value={title}
-        onChange={(e) => setTitle(e.target.value)}
-      />
-      <label htmlFor="content">Article:</label>
-      <textarea
-        id="content"
-        value={content}
-        onChange={(e) => setContent(e.target.value)}
-      ></textarea>
-      <button onClick={handleAddArticle}>Add Article</button>
+      <div className="mb-3">
+        <label htmlFor="title" className="form-label">Title:</label>
+        <input
+          type="text"
+          className="form-control"
+          id="title"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+        />
+      </div>
+      <div className="mb-3">
+        <label htmlFor="content" className="form-label">Article:</label>
+        <textarea
+          className="form-control"
+          id="content"
+          rows="6"
+          value={content}
+          onChange={(e) => setContent(e.target.value)}
+        ></textarea>
+      </div>
+      <button className="btn btn-primary" onClick={handleAddArticle}>Add Article</button>
     </div>
   ); 
  /* return (

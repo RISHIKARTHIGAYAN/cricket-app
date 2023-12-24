@@ -6,6 +6,7 @@ import { useAuth } from '../contexts/AuthContext';
 import AddArticleButton from './AddArticleButton';
 import NewsArticleForm from './NewsArticleForm';
 import { useNavigate } from 'react-router-dom';
+import './ProfilepageButton.css'
 const ProfilePage = () => {
   const [userProfile, setUserProfile] = useState({});
   const [name, setName] = useState('');
@@ -24,7 +25,7 @@ const ProfilePage = () => {
       <hr/>
       {(Role === 'admin') && (
         <Link to="/admin-panel">
-          <button>Admin Panel</button>
+          <button className='button-54'>Admin Panel</button>
         </Link>
       )}
     </div>

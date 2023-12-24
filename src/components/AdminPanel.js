@@ -54,7 +54,7 @@ const handleRoleUpdate = async (username, newRole) => {
 
   return (
     <div>
-      <h2>Admin Panel</h2>
+      <h2><center>Admin Panel</center></h2>
       <table>
         <thead>
           <tr>
@@ -77,6 +77,8 @@ const handleRoleUpdate = async (username, newRole) => {
                   <option value="editor">Editor</option>
                   <option value="user">User</option>
                 </select>
+              </td>
+              <td>
                 <button onClick={() => handleUserDelete(user.username)}>
                   Delete
                 </button>

@@ -43,7 +43,7 @@ const PlayersPage = () => {
         url: 'https://cricbuzz-cricket.p.rapidapi.com/stats/v1/player/search',
         params: {plrN: searchTerm},
         headers: {
-          'X-RapidAPI-Key': '23373efb18mshc1bd80b9460869ep11f283jsn1a854315d51a',
+          'X-RapidAPI-Key': 'f0da064273msh65b06615fa36204p1f832fjsnfb21369486d7',
           'X-RapidAPI-Host': 'cricbuzz-cricket.p.rapidapi.com'
         }
       };

@@ -47,7 +47,7 @@ body {
   align-items: center;
   
   padding: 15px;
-  background-color: rgba(200, 200, 200, 0.1); /* Greyish tint */
+  background-color: rgba(101, 171, 175, 0.814); /* Greyish tint */
   color: #333;
   transition: background-color 0.3s ease; /* Smooth transition */
   border-bottom-left-radius: 10px; /* Rounded edges */

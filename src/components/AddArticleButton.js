@@ -2,7 +2,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
-
+import './ProfilepageButton.css'
 const AddArticleButton = () => {
   const { role } = useAuth();
   const navigate = useNavigate();
@@ -16,7 +16,7 @@ const AddArticleButton = () => {
   return (
     <div>
       {(Role === "admin" || Role === "editor") && (
-        <button onClick={handleClick}>Add Article</button>
+        <button class='button-54' onClick={handleClick}>Add Article</button>
       )}
     </div>
   );

@@ -10,6 +10,7 @@ import AuthPage from './components/AuthPage'; // Import the AuthPage component
 //import newsData from './assets/data/newsData.json';
 import FixturesPage from './components/FixturesPage';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './App.css'
 import { AuthProvider } from './contexts/AuthContext';
 import MatchDetails from './components/MatchDetails';
@@ -19,6 +20,7 @@ import PlayersData from './components/PlayersData';
 import NewsArticleForm from './components/NewsArticleForm';
 import StatsCorner from './components/StatsCorner';
 import AdminPanel from './components/AdminPanel';
+import NewsDetailsPage from './components/NewsDetailsPage';
 
 const App = () => {
   const [newsArticles, setNewsArticles] = useState([]);
@@ -53,10 +55,13 @@ const App = () => {
           <Route path="/admin-panel" element={<AdminPanel/>} />
           <Route path="/" element={
           <div className="news-list">
+            
             {newsArticles.map((news) => (
-              <News {...news} />
+              
+              <Link to={`/news/${news._id}`} key={news._id} className="news-link"><News {...news} /></Link>
             ))}
           </div>} />
+          <Route path="/news/:newsId" element={<NewsDetailsPage newsArticles={newsArticles} />} />
         </Routes>
         
       </div>

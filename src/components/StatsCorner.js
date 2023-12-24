@@ -24,7 +24,7 @@ const StatsCorner = () => {
         url: `https://cricbuzz-cricket.p.rapidapi.com/stats/v1/rankings/${category}`,
         params: {formatType: formatType},
         headers: {
-          'X-RapidAPI-Key': '883d4be953msh491a4bc12419a9cp168e4ejsn2e895db5746c',
+          'X-RapidAPI-Key': 'f0da064273msh65b06615fa36204p1f832fjsnfb21369486d7',
           'X-RapidAPI-Host': 'cricbuzz-cricket.p.rapidapi.com'
         }
       };
@@ -43,6 +43,21 @@ const StatsCorner = () => {
   }
 
   // If the user is logged in, render the stats data or any other content
+  const tableHeaders =
+  category === "teams" ? (
+    <>
+      <th>Country</th>
+      <th>Rank</th>
+      <th>Rating</th>
+    </>
+  ) : (
+    <>
+      <th>Name</th>
+      <th>Country</th>
+      <th>Rank</th>
+      <th>Rating</th>
+    </>
+  );
   return (
     <div>
       <h1 className="stats-title">Statistics</h1>
@@ -77,19 +92,28 @@ const StatsCorner = () => {
       <table className="stats-table">
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Country</th>
-            <th>Rank</th>
+            {tableHeaders}
           </tr>
         </thead>
         <tbody>
-          {data.map((player) => (
-            <tr key={player.id}>
-              <td>{player.name}</td>
-              <td>{player.country}</td>
-              <td>{player.rank}</td>
-            </tr>
-          ))}
+        {data.slice(0, 10).map((player) => (
+              <tr key={player.id}>
+                {category === "teams" ? (
+                  <>
+                    <td>{player.name}</td>
+                    <td>{player.rank}</td>
+                    <td>{player.rating}</td>
+                  </>
+                ) : (
+                  <>
+                      <td>{player.name}</td>
+                      <td>{player.country}</td>
+                    <td>{player.rank}</td>
+                      <td>{player.rating}</td>
+                  </>
+                )}
+              </tr>
+            ))}
         </tbody>
       </table>  
     ) : (

@@ -1,23 +1,74 @@
 /* ArticleForm.css */
 .article-form-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.article-form {
+  width: 75%;
+  max-width: 600px; /* Set a maximum width if needed */
+}
+
+.article-form label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.article-form textarea {
+  width: 100%;
+  resize: vertical; /* Allow vertical resizing of the textarea */
+}
+
+
+  .container {
+    max-width: 600px;
+    margin: auto;
     padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
   }
-  
-  .article-form {
-    width: 75%;
-    max-width: 600px; /* Set a maximum width if needed */
+
+  h2 {
+    color: #343a40;
   }
-  
-  .article-form label {
+
+  label {
+    display: block;
     margin-bottom: 8px;
-    font-weight: bold;
+    color: #495057;
   }
-  
-  .article-form textarea {
+
+  .input-group {
+    margin-bottom: 20px;
+  }
+
+  .form-control {
     width: 100%;
-    resize: vertical; /* Allow vertical resizing of the textarea */
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
   }
-  
+
+  textarea {
+    resize: vertical;
+  }
+
+  button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }

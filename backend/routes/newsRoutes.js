@@ -6,7 +6,7 @@ const NewsArticle = require('../models/NewsArticle');
 // Fetch all news articles
 router.get('/articles', async (req, res) => {
   try {
-    const articles = await NewsArticle.find({}, 'title author');
+    const articles = await NewsArticle.find({}, 'title author content');
     res.status(200).json(articles);
   } catch (error) {
     console.error('Error fetching articles:', error);
